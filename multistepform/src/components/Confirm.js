@@ -113,8 +113,8 @@ export class Confirm extends Component {
             <List>
               <ListItem>
                 <ListItemText
-                  onChange={this.onChangeFName}
-                  value={this.state.firstName}
+                  // onChange={this.onChangeFName}
+                  // value={this.state.firstName}
                   primary="First Name"
                   secondary={firstName}
                 />
@@ -122,40 +122,40 @@ export class Confirm extends Component {
               <ListItem>
                 <ListItemText
                   primary="Last Name"
-                  onChange={this.onChangeLName}
-                  value={this.state.lastName}
+                  // onChange={this.onChangeLName}
+                  // value={this.state.lastName}
                   secondary={lastName}
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
                   primary="Email"
-                  onChange={this.onChangeEmail}
-                  value={this.state.email}
+                  // onChange={this.onChangeEmail}
+                  // value={this.state.email}
                   secondary={email}
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
                   primary="Occupation"
-                  onChange={this.onChangeOccupation}
-                  value={this.state.occupation}
+                  // onChange={this.onChangeOccupation}
+                  // value={this.state.occupation}
                   secondary={occupation}
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
                   primary="City"
-                  onChange={this.onChangeCity}
-                  value={this.state.city}
+                  // onChange={this.onChangeCity}
+                  // value={this.state.city}
                   secondary={city}
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
                   primary="Bio"
-                  onChange={this.onChangeBio}
-                  value={this.state.bio}
+                  // onChange={this.onChangeBio}
+                  // value={this.state.bio}
                   secondary={bio}
                 />
               </ListItem>

@@ -59,8 +59,8 @@ router.post("/update/:id", (req, res) => {
     if (!multistep) {
       res.status(404).send("Data not found");
     } else {
-      multistep.firstname = req.body.firstname;
-      multistep.lastname = req.body.lastname;
+      multistep.firstName = req.body.firstName;
+      multistep.lastName = req.body.lastName;
       multistep.email = req.body.email;
       multistep.occupation = req.body.occupation;
       multistep.city = req.body.city;
