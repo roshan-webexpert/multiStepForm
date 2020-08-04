@@ -10,6 +10,14 @@ export class Confirm extends Component {
   constructor(props) {
     super(props);
 
+    this.onChangeFName = this.onChangeFName.bind(this);
+    this.onChangeLName = this.onChangeLName.bind(this);
+    this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangeOccupation = this.onChangeOccupation.bind(this);
+    this.onChangeCity = this.onChangeCity.bind(this);
+    this.onChangeBio = this.onChangeBio.bind(this);
+    this.continue = this.continue.bind(this);
+
     this.state = {
       firstName: "",
       lastName: "",
@@ -74,6 +82,7 @@ export class Confirm extends Component {
       city: this.state.city,
       bio: this.state.bio,
     };
+
     axios
       .post("http://localhost:5000/multisteps/add", newMultiStep)
       .then((res) => {
@@ -116,12 +125,14 @@ export class Confirm extends Component {
                   // onChange={this.onChangeFName}
                   // value={this.state.firstName}
                   primary="First Name"
+                  value={this.state.firstName}
                   secondary={firstName}
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
                   primary="Last Name"
+                  value={this.state.lastName}
                   // onChange={this.onChangeLName}
                   // value={this.state.lastName}
                   secondary={lastName}
@@ -130,6 +141,7 @@ export class Confirm extends Component {
               <ListItem>
                 <ListItemText
                   primary="Email"
+                  value={this.state.email}
                   // onChange={this.onChangeEmail}
                   // value={this.state.email}
                   secondary={email}
@@ -138,6 +150,7 @@ export class Confirm extends Component {
               <ListItem>
                 <ListItemText
                   primary="Occupation"
+                  value={this.state.occupation}
                   // onChange={this.onChangeOccupation}
                   // value={this.state.occupation}
                   secondary={occupation}
@@ -146,6 +159,7 @@ export class Confirm extends Component {
               <ListItem>
                 <ListItemText
                   primary="City"
+                  value={this.state.city}
                   // onChange={this.onChangeCity}
                   // value={this.state.city}
                   secondary={city}
@@ -154,6 +168,7 @@ export class Confirm extends Component {
               <ListItem>
                 <ListItemText
                   primary="Bio"
+                  value={this.state.bio}
                   // onChange={this.onChangeBio}
                   // value={this.state.bio}
                   secondary={bio}
