@@ -102,7 +102,7 @@ export class Confirm extends Component {
       bio: "",
     });
     // PROCESS FORM //
-    this.props.nextStep();
+    // this.props.nextStep();
   };
 
   back = (e) => {
